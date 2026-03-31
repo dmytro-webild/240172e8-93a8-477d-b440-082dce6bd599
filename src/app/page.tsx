@@ -31,34 +31,20 @@ export default function LandingPage() {
       <NavbarStyleCentered
       navItems={[
         {
-          name: "Home",
-          id: "hero",
-        },
+          name: "Home",          id: "hero"},
         {
-          name: "About",
-          id: "about",
-        },
+          name: "About",          id: "about"},
         {
-          name: "Services",
-          id: "services",
-        },
+          name: "Services",          id: "services"},
         {
-          name: "Listings",
-          id: "listings",
-        },
+          name: "Listings",          id: "listings"},
         {
-          name: "Testimonials",
-          id: "testimonials",
-        },
+          name: "Testimonials",          id: "testimonials"},
         {
-          name: "Contact",
-          id: "contact",
-        },
+          name: "Contact",          id: "contact"},
       ]}
       button={{
-        text: "Schedule Consultation",
-        href: "#contact",
-      }}
+        text: "Schedule Consultation",        href: "#contact"}}
       brandName="The Guerini Group"
     />
   </div>
@@ -66,73 +52,44 @@ export default function LandingPage() {
   <div id="hero" data-section="hero">
       <HeroSplitDoubleCarousel
       background={{
-        variant: "radial-gradient",
-      }}
+        variant: "radial-gradient"}}
       title="Elevating Your Real Estate Experience"
       description="Buy, Sell, and Invest with Confidence. With The Guerini Group, you gain dedicated advisors committed to your long-term wealth."
       leftCarouselItems={[
         {
-          imageSrc: "http://img.b2bpic.net/free-psd/classic-ballroom-award-ceremony-generative-ai_587448-1905.jpg",
-          imageAlt: "Modern luxury home interior",
-        },
+          imageSrc: "http://img.b2bpic.net/free-psd/classic-ballroom-award-ceremony-generative-ai_587448-1905.jpg",          imageAlt: "Modern luxury home interior"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/modern-house-with-pool-lush-greenery_23-2152008205.jpg",
-          imageAlt: "Luxury villa with infinity pool",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/modern-house-with-pool-lush-greenery_23-2152008205.jpg",          imageAlt: "Luxury villa with infinity pool"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/people-making-pasta-together-medium-shot_23-2149631676.jpg",
-          imageAlt: "Gourmet kitchen in a luxury home",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/people-making-pasta-together-medium-shot_23-2149631676.jpg",          imageAlt: "Gourmet kitchen in a luxury home"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/young-beautiful-woman-sitting-bed-hotel-stylish-evening-dress-sensual-mood-talking-phone-smiling-flirty-looking-sexy_285396-6170.jpg",
-          imageAlt: "Luxurious master bedroom",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/young-beautiful-woman-sitting-bed-hotel-stylish-evening-dress-sensual-mood-talking-phone-smiling-flirty-looking-sexy_285396-6170.jpg",          imageAlt: "Luxurious master bedroom"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/bangkok-thailand-august-12-2016-beautiful-luxury-bathroom_1203-2726.jpg",
-          imageAlt: "Spa-like luxury bathroom",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/bangkok-thailand-august-12-2016-beautiful-luxury-bathroom_1203-2726.jpg",          imageAlt: "Spa-like luxury bathroom"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/romantic-couple-embracing-each-other-while-outdoors-night_23-2149215087.jpg",
-          imageAlt: "Modern home exterior at twilight",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/romantic-couple-embracing-each-other-while-outdoors-night_23-2149215087.jpg",          imageAlt: "Modern home exterior at twilight"},
       ]}
       rightCarouselItems={[
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/modern-dining-room-living-room-with-luxury-decor_105762-1672.jpg",
-          imageAlt: "Modern luxury home interior",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/modern-dining-room-living-room-with-luxury-decor_105762-1672.jpg",          imageAlt: "Modern luxury home interior"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/beautiful-outdoor-swimming-pool-hotel-resort-with-chair-deck-leisure-vacation_74190-8436.jpg",
-          imageAlt: "Luxury villa with infinity pool",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/beautiful-outdoor-swimming-pool-hotel-resort-with-chair-deck-leisure-vacation_74190-8436.jpg",          imageAlt: "Luxury villa with infinity pool"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/brunette-girl-wear-shirt-underwear-cooking-white-kitchen_627829-10511.jpg",
-          imageAlt: "Gourmet kitchen in a luxury home",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/brunette-girl-wear-shirt-underwear-cooking-white-kitchen_627829-10511.jpg",          imageAlt: "Gourmet kitchen in a luxury home"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/architecture_1122-1804.jpg",
-          imageAlt: "Luxurious master bedroom",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/architecture_1122-1804.jpg",          imageAlt: "Luxurious master bedroom"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/woman-towel-her-head-bathrobe-reads-latest-news-lady-with-cup-tea-posing-bathroom_197531-17268.jpg",
-          imageAlt: "Spa-like luxury bathroom",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/woman-towel-her-head-bathrobe-reads-latest-news-lady-with-cup-tea-posing-bathroom_197531-17268.jpg",          imageAlt: "Spa-like luxury bathroom"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/modern-concrete-apartment-building_250224-11.jpg",
-          imageAlt: "Modern home exterior at twilight",
-        },
+          imageSrc: "http://img.b2bpic.net/free-photo/modern-concrete-apartment-building_250224-11.jpg",          imageAlt: "Modern home exterior at twilight"},
       ]}
       tag="Luxury Real Estate Advisors"
       tagAnimation="slide-up"
       buttons={[
         {
-          text: "Find Your Dream Home",
-          href: "#listings",
-        },
+          text: "Find Your Dream Home",          href: "#listings"},
         {
-          text: "Get Your Home Value",
-          href: "#contact",
-        },
+          text: "Get Your Home Value",          href: "#contact"},
       ]}
       buttonAnimation="slide-up"
     />
@@ -143,35 +100,17 @@ export default function LandingPage() {
       useInvertedBackground={true}
       testimonials={[
         {
-          id: "1",
-          name: "Sarah J.",
-          imageSrc: "http://img.b2bpic.net/free-photo/black-man-general-manager-connects-with-his-team-via-video-call_482257-123824.jpg",
-        },
+          id: "1",          name: "Sarah J.",          imageSrc: "http://img.b2bpic.net/free-photo/black-man-general-manager-connects-with-his-team-via-video-call_482257-123824.jpg"},
         {
-          id: "2",
-          name: "Michael T.",
-          imageSrc: "http://img.b2bpic.net/free-photo/lucky-man_1368-6349.jpg",
-        },
+          id: "2",          name: "Michael T.",          imageSrc: "http://img.b2bpic.net/free-photo/lucky-man_1368-6349.jpg"},
         {
-          id: "3",
-          name: "Emily R.",
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-smiley-man-posing_23-2148563424.jpg",
-        },
+          id: "3",          name: "Emily R.",          imageSrc: "http://img.b2bpic.net/free-photo/close-up-smiley-man-posing_23-2148563424.jpg"},
         {
-          id: "4",
-          name: "David K.",
-          imageSrc: "http://img.b2bpic.net/free-photo/executive-assistant-multinational-company-work-big-business-project_482257-113916.jpg",
-        },
+          id: "4",          name: "David K.",          imageSrc: "http://img.b2bpic.net/free-photo/executive-assistant-multinational-company-work-big-business-project_482257-113916.jpg"},
         {
-          id: "5",
-          name: "Jessica L.",
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-cool-young-black-man-with-curly-hair-has-cheerful-expression_273609-8605.jpg",
-        },
+          id: "5",          name: "Jessica L.",          imageSrc: "http://img.b2bpic.net/free-photo/portrait-cool-young-black-man-with-curly-hair-has-cheerful-expression_273609-8605.jpg"},
         {
-          id: "6",
-          name: "Robert S.",
-          imageSrc: "http://img.b2bpic.net/free-photo/beautiful-young-female-with-hair-bun-having-joyful-look-smiling-cheerfully-happy-with-some-positive-news_273609-9042.jpg",
-        },
+          id: "6",          name: "Robert S.",          imageSrc: "http://img.b2bpic.net/free-photo/beautiful-young-female-with-hair-bun-having-joyful-look-smiling-cheerfully-happy-with-some-positive-news_273609-9042.jpg"},
       ]}
       cardTitle="5-Star Client Experiences"
       cardTag="Trusted by Many"
@@ -185,9 +124,7 @@ export default function LandingPage() {
       title="Your Trusted Advisors: John & Silvia Guerini"
       buttons={[
         {
-          text: "Meet John & Silvia",
-          href: "#",
-        },
+          text: "Meet John & Silvia",          href: "#"},
       ]}
     />
   </div>
@@ -199,32 +136,17 @@ export default function LandingPage() {
       useInvertedBackground={true}
       features={[
         {
-          id: "1",
-          title: "Buying Your Dream Home",
-          tags: [
-            "Guidance",
-            "Luxury Access",
-          ],
-          imageSrc: "http://img.b2bpic.net/free-vector/heart-key-multiple-styles_78370-7845.jpg",
-        },
+          id: "1",          title: "Buying Your Dream Home",          tags: [
+            "Guidance",            "Luxury Access"],
+          imageSrc: "http://img.b2bpic.net/free-vector/heart-key-multiple-styles_78370-7845.jpg"},
         {
-          id: "2",
-          title: "Selling for Top Value",
-          tags: [
-            "Marketing",
-            "Negotiation",
-          ],
-          imageSrc: "http://img.b2bpic.net/free-vector/minimalist-investate-logo-design_23-2149543234.jpg",
-        },
+          id: "2",          title: "Selling for Top Value",          tags: [
+            "Marketing",            "Negotiation"],
+          imageSrc: "http://img.b2bpic.net/free-vector/minimalist-investate-logo-design_23-2149543234.jpg"},
         {
-          id: "3",
-          title: "Strategic Real Estate Investments",
-          tags: [
-            "Wealth Building",
-            "Market Insights",
-          ],
-          imageSrc: "http://img.b2bpic.net/free-vector/gradient-real-estate-infographics_52683-67156.jpg",
-        },
+          id: "3",          title: "Strategic Real Estate Investments",          tags: [
+            "Wealth Building",            "Market Insights"],
+          imageSrc: "http://img.b2bpic.net/free-vector/gradient-real-estate-infographics_52683-67156.jpg"},
       ]}
       title="Concierge Real Estate Services"
       description="Whether you're buying your first home, selling an investment property, or strategically expanding your portfolio, The Guerini Group offers unparalleled guidance and support at every stage."
@@ -238,26 +160,11 @@ export default function LandingPage() {
       useInvertedBackground={false}
       metrics={[
         {
-          id: "1",
-          value: "100%",
-          title: "First-Time Buyer Success",
-          description: "Helping families find their perfect first home with ease and confidence.",
-          imageSrc: "http://img.b2bpic.net/free-photo/front-view-happy-couple-together-their-new-house-conception-moving_146671-16185.jpg",
-        },
+          id: "1",          value: "100%",          title: "First-Time Buyer Success",          description: "Helping families find their perfect first home with ease and confidence.",          imageSrc: "http://img.b2bpic.net/free-photo/front-view-happy-couple-together-their-new-house-conception-moving_146671-16185.jpg"},
         {
-          id: "2",
-          value: "Avg. 30 Days",
-          title: "Fast Transactions",
-          description: "Efficiently closing deals, often faster than market average, for seamless transitions.",
-          imageSrc: "http://img.b2bpic.net/free-photo/people-practicing-social-integration-workspace_23-2149405354.jpg",
-        },
+          id: "2",          value: "Avg. 30 Days",          title: "Fast Transactions",          description: "Efficiently closing deals, often faster than market average, for seamless transitions.",          imageSrc: "http://img.b2bpic.net/free-photo/people-practicing-social-integration-workspace_23-2149405354.jpg"},
         {
-          id: "3",
-          value: "+15%",
-          title: "Above-Expected Returns",
-          description: "Achieving superior returns for our investor clients through expert market strategy.",
-          imageSrc: "http://img.b2bpic.net/free-photo/low-angle-view-man-city_23-2148296604.jpg",
-        },
+          id: "3",          value: "+15%",          title: "Above-Expected Returns",          description: "Achieving superior returns for our investor clients through expert market strategy.",          imageSrc: "http://img.b2bpic.net/free-photo/low-angle-view-man-city_23-2148296604.jpg"},
       ]}
       title="Proven Results, Exceptional Experiences"
       description="Our commitment to excellence translates into tangible outcomes for our clients, from securing dream homes to maximizing returns on investment."
@@ -272,33 +179,13 @@ export default function LandingPage() {
       useInvertedBackground={true}
       products={[
         {
-          id: "1",
-          name: "Modern Hillside Estate",
-          price: "$5,200,000",
-          imageSrc: "http://img.b2bpic.net/free-photo/beautiful-streets-switzerland_8353-9666.jpg",
-          imageAlt: "Modern Hillside Estate",
-        },
+          id: "1",          name: "Modern Hillside Estate",          price: "$5,200,000",          imageSrc: "http://img.b2bpic.net/free-photo/beautiful-streets-switzerland_8353-9666.jpg",          imageAlt: "Modern Hillside Estate"},
         {
-          id: "2",
-          name: "Downtown Luxury Loft",
-          price: "$1,850,000",
-          imageSrc: "http://img.b2bpic.net/free-photo/glass-wine-decorated-table_1162-214.jpg",
-          imageAlt: "Downtown Luxury Loft",
-        },
+          id: "2",          name: "Downtown Luxury Loft",          price: "$1,850,000",          imageSrc: "http://img.b2bpic.net/free-photo/glass-wine-decorated-table_1162-214.jpg",          imageAlt: "Downtown Luxury Loft"},
         {
-          id: "3",
-          name: "Coastal View Residence",
-          price: "$7,100,000",
-          imageSrc: "http://img.b2bpic.net/free-photo/pillow-sofa_74190-2069.jpg",
-          imageAlt: "Coastal View Residence",
-        },
+          id: "3",          name: "Coastal View Residence",          price: "$7,100,000",          imageSrc: "http://img.b2bpic.net/free-photo/pillow-sofa_74190-2069.jpg",          imageAlt: "Coastal View Residence"},
         {
-          id: "4",
-          name: "Suburban Executive Home",
-          price: "$2,995,000",
-          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-happy-woman-bathtub_23-2148271112.jpg",
-          imageAlt: "Suburban Executive Home",
-        },
+          id: "4",          name: "Suburban Executive Home",          price: "$2,995,000",          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-happy-woman-bathtub_23-2148271112.jpg",          imageAlt: "Suburban Executive Home"},
       ]}
       title="Exclusive Featured Listings"
       description="Explore a curated selection of luxury properties that match our discerning standards. Your next dream home awaits."
@@ -309,22 +196,15 @@ export default function LandingPage() {
       <ContactText
       useInvertedBackground={false}
       background={{
-        variant: "radial-gradient",
-      }}
+        variant: "radial-gradient"}}
       text="Ready to elevate your real estate journey? Contact The Guerini Group today for a private consultation. We respond quickly."
       buttons={[
         {
-          text: "Schedule a Consultation",
-          href: "#",
-        },
+          text: "Schedule a Consultation",          href: "#"},
         {
-          text: "Start Your Home Search",
-          href: "#listings",
-        },
+          text: "Start Your Home Search",          href: "#listings"},
         {
-          text: "Sell Your Home Today",
-          href: "#",
-        },
+          text: "Sell Your Home Today",          href: "#"},
       ]}
     />
   </div>
@@ -333,54 +213,33 @@ export default function LandingPage() {
       <FooterBaseReveal
       columns={[
         {
-          title: "Company",
-          items: [
+          title: "Company",          items: [
             {
-              label: "Home",
-              href: "#hero",
-            },
+              label: "Home",              href: "#hero"},
             {
-              label: "About Us",
-              href: "#about",
-            },
+              label: "About Us",              href: "#about"},
             {
-              label: "Services",
-              href: "#services",
-            },
+              label: "Services",              href: "#services"},
             {
-              label: "Listings",
-              href: "#listings",
-            },
+              label: "Listings",              href: "#listings"},
           ],
         },
         {
-          title: "Resources",
-          items: [
+          title: "Resources",          items: [
             {
-              label: "Testimonials",
-              href: "#testimonials",
-            },
+              label: "Testimonials",              href: "#testimonials"},
             {
-              label: "Contact",
-              href: "#contact",
-            },
+              label: "Contact",              href: "#contact"},
             {
-              label: "FAQs",
-              href: "#",
-            },
+              label: "FAQs",              href: "#"},
           ],
         },
         {
-          title: "Legal",
-          items: [
+          title: "Legal",          items: [
             {
-              label: "Privacy Policy",
-              href: "#",
-            },
+              label: "Privacy Policy",              href: "#"},
             {
-              label: "Terms of Service",
-              href: "#",
-            },
+              label: "Terms of Service",              href: "#"},
           ],
         },
       ]}
