@@ -81,7 +81,7 @@ export default function LandingPage() {
         {
           imageSrc: "http://img.b2bpic.net/free-photo/woman-towel-her-head-bathrobe-reads-latest-news-lady-with-cup-tea-posing-bathroom_197531-17268.jpg",          imageAlt: "Spa-like luxury bathroom"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/modern-concrete-apartment-building_250224-11.jpg",          imageAlt: "Modern home exterior at twilight"},
+          imageSrc: "http://img.b2bpic.net/free-photo/walking-couple-with-dogs-autumn-forest-owners-with-golden-labrador-relaxing-near-car_496169-1056.jpg?id=18017170",          imageAlt: "Modern home exterior at twilight"},
       ]}
       tag="Luxury Real Estate Advisors"
       tagAnimation="slide-up"
