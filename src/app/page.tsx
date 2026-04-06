@@ -57,13 +57,13 @@ export default function LandingPage() {
       description="Buy, Sell, and Invest with Confidence. With The Guerini Group, you gain dedicated advisors committed to your long-term wealth."
       leftCarouselItems={[
         {
-          imageSrc: "http://img.b2bpic.net/free-psd/classic-ballroom-award-ceremony-generative-ai_587448-1905.jpg",          imageAlt: "Modern luxury home interior"},
+          imageSrc: "http://img.b2bpic.net/free-photo/boston-panorama_649448-1007.jpg?id=26742803",          imageAlt: "Modern luxury home interior"},
         {
           imageSrc: "http://img.b2bpic.net/free-photo/modern-house-with-pool-lush-greenery_23-2152008205.jpg",          imageAlt: "Luxury villa with infinity pool"},
         {
           imageSrc: "http://img.b2bpic.net/free-photo/people-making-pasta-together-medium-shot_23-2149631676.jpg",          imageAlt: "Gourmet kitchen in a luxury home"},
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/young-beautiful-woman-sitting-bed-hotel-stylish-evening-dress-sensual-mood-talking-phone-smiling-flirty-looking-sexy_285396-6170.jpg",          imageAlt: "Luxurious master bedroom"},
+          imageSrc: "http://img.b2bpic.net/free-photo/boston-morning_649448-792.jpg?id=26741976",          imageAlt: "Luxurious master bedroom"},
         {
           imageSrc: "http://img.b2bpic.net/free-photo/bangkok-thailand-august-12-2016-beautiful-luxury-bathroom_1203-2726.jpg",          imageAlt: "Spa-like luxury bathroom"},
         {
