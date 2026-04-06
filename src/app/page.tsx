@@ -87,9 +87,9 @@ export default function LandingPage() {
       tagAnimation="slide-up"
       buttons={[
         {
-          text: "Find Your Dream Home",          href: "#listings"},
+          text: "Browse Luxury Listings",          href: "#listings"},
         {
-          text: "Get Your Home Value",          href: "#contact"},
+          text: "Get a Free Property Valuation",          href: "#contact"},
       ]}
       buttonAnimation="slide-up"
     />
