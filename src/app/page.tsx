@@ -200,11 +200,9 @@ export default function LandingPage() {
       text="Ready to elevate your real estate journey? Contact The Guerini Group today for a private consultation. We respond quickly."
       buttons={[
         {
-          text: "Schedule a Consultation",          href: "#"},
+          text: "Schedule Consultation",          href: "#"},
         {
-          text: "Start Your Home Search",          href: "#listings"},
-        {
-          text: "Sell Your Home Today",          href: "#"},
+          text: "View Listings",          href: "#listings"},
       ]}
     />
   </div>
