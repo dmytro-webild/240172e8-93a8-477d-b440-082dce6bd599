@@ -171,7 +171,6 @@ export default function LandingPage() {
       ]}
       copyrightText="© 2024 The Guerini Group. All rights reserved."
       onPrivacyClick={() => console.log("Privacy policy clicked")}
-      logoText="The Guerini Group"
     />
   </div>
       </ReactLenis>
