@@ -91,7 +91,6 @@ export default function LandingPage() {
         { id: "9", name: "Elena P.", imageSrc: "http://img.b2bpic.net/free-photo/smiling-business-woman_23-2148563424.jpg" },
         { id: "10", name: "James H.", imageSrc: "http://img.b2bpic.net/free-photo/professional-man_1368-6351.jpg" }
       ]}
-      buttons={[{ text: "View All Reviews", onClick: () => console.log("Navigate to reviews") }]}
     />
   </div>
 
@@ -172,6 +171,7 @@ export default function LandingPage() {
       ]}
       copyrightText="© 2024 The Guerini Group. All rights reserved."
       onPrivacyClick={() => console.log("Privacy policy clicked")}
+      logoText="The Guerini Group"
     />
   </div>
       </ReactLenis>
