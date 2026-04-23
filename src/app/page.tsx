@@ -91,6 +91,7 @@ export default function LandingPage() {
         { id: "9", name: "Elena P.", imageSrc: "http://img.b2bpic.net/free-photo/smiling-business-woman_23-2148563424.jpg" },
         { id: "10", name: "James H.", imageSrc: "http://img.b2bpic.net/free-photo/professional-man_1368-6351.jpg" }
       ]}
+      buttons={[{ text: "View All Reviews", onClick: () => console.log("Navigate to reviews") }]}
     />
   </div>
 
@@ -108,12 +109,13 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={true}
       features={[
-        { id: "1", title: "Buying Your Dream Home", tags: ["Guidance", "Luxury Access"], imageSrc: "http://img.b2bpic.net/free-vector/heart-key-multiple-styles_78370-7845.jpg" },
-        { id: "2", title: "Selling for Top Value", tags: ["Marketing", "Negotiation"], imageSrc: "http://img.b2bpic.net/free-vector/minimalist-investate-logo-design_23-2149543234.jpg" },
-        { id: "3", title: "Strategic Real Estate Investments", tags: ["Wealth Building", "Market Insights"], imageSrc: "http://img.b2bpic.net/free-vector/gradient-real-estate-infographics_52683-67156.jpg" },
+        { id: "1", title: "Buying Your Dream Home", tags: ["Guidance", "Luxury Access"], imageSrc: "http://img.b2bpic.net/free-vector/heart-key-multiple-styles_78370-7845.jpg", onFeatureClick: () => console.log("Service 1 clicked") },
+        { id: "2", title: "Selling for Top Value", tags: ["Marketing", "Negotiation"], imageSrc: "http://img.b2bpic.net/free-vector/minimalist-investate-logo-design_23-2149543234.jpg", onFeatureClick: () => console.log("Service 2 clicked") },
+        { id: "3", title: "Strategic Real Estate Investments", tags: ["Wealth Building", "Market Insights"], imageSrc: "http://img.b2bpic.net/free-vector/gradient-real-estate-infographics_52683-67156.jpg", onFeatureClick: () => console.log("Service 3 clicked") },
       ]}
       title="Concierge Real Estate Services"
       description="Whether you're buying your first home, selling an investment property, or strategically expanding your portfolio, The Guerini Group offers unparalleled guidance and support at every stage."
+      buttons={[{ text: "Explore Services", onClick: () => console.log("Explore services") }]}
     />
   </div>
 
@@ -139,10 +141,10 @@ export default function LandingPage() {
       gridVariant="four-items-2x2-equal-grid"
       useInvertedBackground={true}
       products={[
-        { id: "1", name: "Modern Hillside Estate", price: "$5,200,000", imageSrc: "http://img.b2bpic.net/free-photo/beautiful-streets-switzerland_8353-9666.jpg", imageAlt: "Modern Hillside Estate" },
-        { id: "2", name: "Downtown Luxury Loft", price: "$1,850,000", imageSrc: "http://img.b2bpic.net/free-photo/glass-wine-decorated-table_1162-214.jpg", imageAlt: "Downtown Luxury Loft" },
-        { id: "3", name: "Coastal View Residence", price: "$7,100,000", imageSrc: "http://img.b2bpic.net/free-photo/pillow-sofa_74190-2069.jpg", imageAlt: "Coastal View Residence" },
-        { id: "4", name: "Suburban Executive Home", price: "$2,995,000", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-happy-woman-bathtub_23-2148271112.jpg", imageAlt: "Suburban Executive Home" },
+        { id: "1", name: "Modern Hillside Estate", price: "$5,200,000", imageSrc: "http://img.b2bpic.net/free-photo/beautiful-streets-switzerland_8353-9666.jpg", imageAlt: "Modern Hillside Estate", onProductClick: () => console.log("Listing 1 clicked") },
+        { id: "2", name: "Downtown Luxury Loft", price: "$1,850,000", imageSrc: "http://img.b2bpic.net/free-photo/glass-wine-decorated-table_1162-214.jpg", imageAlt: "Downtown Luxury Loft", onProductClick: () => console.log("Listing 2 clicked") },
+        { id: "3", name: "Coastal View Residence", price: "$7,100,000", imageSrc: "http://img.b2bpic.net/free-photo/pillow-sofa_74190-2069.jpg", imageAlt: "Coastal View Residence", onProductClick: () => console.log("Listing 3 clicked") },
+        { id: "4", name: "Suburban Executive Home", price: "$2,995,000", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-happy-woman-bathtub_23-2148271112.jpg", imageAlt: "Suburban Executive Home", onProductClick: () => console.log("Listing 4 clicked") },
       ]}
       title="Exclusive Featured Listings"
       description="Explore a curated selection of luxury properties that match our discerning standards. Your next dream home awaits."
@@ -169,6 +171,7 @@ export default function LandingPage() {
         { title: "Legal", items: [{ label: "Privacy Policy", href: "#" }, { label: "Terms of Service", href: "#" }] },
       ]}
       copyrightText="© 2024 The Guerini Group. All rights reserved."
+      onPrivacyClick={() => console.log("Privacy policy clicked")}
     />
   </div>
       </ReactLenis>
