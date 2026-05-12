@@ -13,7 +13,7 @@ export default function AboutUsPage() {
           <NavbarStyleCentered navItems={[{ name: "Home", id: "/" }, { name: "About", id: "/about" }, { name: "Company", id: "/company" }]} />
         </div>
         <div id="about" data-section="about">
-          <TextAbout title="About Us" />
+          <TextAbout title="About Us" useInvertedBackground={false} />
         </div>
         <div id="footer" data-section="footer">
           <FooterBaseReveal logoText="The Guerini Group" columns={[{ title: "Company", items: [{ label: "Home", href: "/" }] }]} />
