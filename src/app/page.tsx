@@ -35,8 +35,8 @@ export default function LandingPage() {
         { name: "Services", id: "services" },
         { name: "Listings", id: "listings" },
         { name: "Testimonials", id: "testimonials" },
+        { name: "Valuation", id: "/free-property-valuation" },
         { name: "Contact", id: "contact" },
-        { name: "Free Valuation", id: "/free-valuation" },
       ]}
       button={{ text: "Schedule Consultation", onClick: () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) }}
       brandName="The Guerini Group"
@@ -68,7 +68,7 @@ export default function LandingPage() {
       tagAnimation="slide-up"
       buttons={[
         { text: "Browse Luxury Listings", href: "#listings" },
-        { text: "Get a Free Property Valuation", href: "/free-valuation" },
+        { text: "Get a Free Property Valuation", href: "/free-property-valuation" },
       ]}
       buttonAnimation="slide-up"
     />
