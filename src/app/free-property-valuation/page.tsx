@@ -11,7 +11,18 @@ export default function PropertyValuationPage() {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <ThemeProvider>
+    <ThemeProvider 
+        defaultButtonVariant="text-stagger" 
+        defaultTextAnimation="entrance-slide" 
+        borderRadius="rounded" 
+        contentWidth="medium" 
+        sizing="medium" 
+        background="circleGradient" 
+        cardStyle="glass-elevated" 
+        primaryButtonStyle="gradient" 
+        secondaryButtonStyle="glass" 
+        headingFontWeight="normal"
+    >
       <ReactLenis root>
         <div id="nav">
           <NavbarStyleCentered 
@@ -21,6 +32,7 @@ export default function PropertyValuationPage() {
               { name: "Contact", id: "/" }
             ]}
             brandName="The Guerini Group"
+            button={{ text: "Contact" }}
           />
         </div>
 
@@ -57,7 +69,7 @@ export default function PropertyValuationPage() {
         </div>
 
         <div id="about">
-           <TextAbout title="Why Choose Us" />
+           <TextAbout title="Why Choose Us" useInvertedBackground={false} />
         </div>
 
         <div id="footer">
