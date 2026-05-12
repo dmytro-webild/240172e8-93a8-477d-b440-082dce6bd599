@@ -1,5 +1,4 @@
 "use client";
-
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
@@ -8,22 +7,17 @@ import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 
 export default function FaqsPage() {
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultButtonVariant="text-stagger" defaultTextAnimation="entrance-slide" borderRadius="rounded" contentWidth="medium" sizing="medium" background="circleGradient" cardStyle="glass-elevated" primaryButtonStyle="gradient" secondaryButtonStyle="glass" headingFontWeight="normal">
       <ReactLenis root>
-        <NavbarStyleCentered navItems={[{ name: "Home", id: "/" }, { name: "About", id: "/#about" }, { name: "Services", id: "/#services" }, { name: "Listings", id: "/#listings" }, { name: "Testimonials", id: "/testimonials" }, { name: "FAQs", id: "/faqs" }, { name: "Contact", id: "/contact" }]} />
-        <div className="pt-32">
-          <FaqBase 
-            title="Frequently Asked Questions"
-            description="Everything you need to know about our services and process."
-            faqsAnimation="slide-up"
-            textboxLayout="default"
-            faqs={[
-              { id: "1", title: "How do I start?", content: "Contact us to schedule a meeting." },
-              { id: "2", title: "Do you work with investors?", content: "Yes, we specialize in high-yield investments." }
-            ]}
-          />
+        <div id="nav" data-section="nav">
+          <NavbarStyleCentered navItems={[{ name: "Home", id: "/" }, { name: "FAQs", id: "/faqs" }, { name: "Contact", id: "/contact" }]} />
         </div>
-        <FooterBaseReveal columns={[]} logoText="The Guerini Group" />
+        <div id="faqs" data-section="faqs">
+          <FaqBase title="Frequently Asked Questions" description="Answers to common questions." faqsAnimation="slide-up" textboxLayout="default" useInvertedBackground={false} faqs={[{ id: "1", title: "How do I start?", content: "Contact us today." }]} />
+        </div>
+        <div id="footer" data-section="footer">
+          <FooterBaseReveal logoText="The Guerini Group" columns={[{ title: "Support", items: [{ label: "FAQs", href: "/faqs" }] }]} />
+        </div>
       </ReactLenis>
     </ThemeProvider>
   );
