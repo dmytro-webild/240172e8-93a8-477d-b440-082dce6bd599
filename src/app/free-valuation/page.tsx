@@ -27,7 +27,7 @@ export default function FreeValuationPage() {
       <main className="py-20 px-4 md:px-10 max-w-4xl mx-auto min-h-screen">
         {!submitted ? (
           <div className="space-y-8">
-            <TextAnimation title="Free Property Valuation" type="reveal-blur" className="text-4xl font-bold" />
+            <TextAnimation title="Free Property Valuation" className="text-4xl font-bold" />
             <p className="text-lg">Fill out the form below to receive a professional property assessment from our luxury experts.</p>
             
             {step === 1 && (
