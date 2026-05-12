@@ -1,5 +1,4 @@
 "use client";
-
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
@@ -8,18 +7,17 @@ import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 
 export default function ContactPage() {
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultButtonVariant="text-stagger" defaultTextAnimation="entrance-slide" borderRadius="rounded" contentWidth="medium" sizing="medium" background="circleGradient" cardStyle="glass-elevated" primaryButtonStyle="gradient" secondaryButtonStyle="glass" headingFontWeight="normal">
       <ReactLenis root>
-        <NavbarStyleCentered navItems={[{ name: "Home", id: "/" }, { name: "About", id: "/#about" }, { name: "Services", id: "/#services" }, { name: "Listings", id: "/#listings" }, { name: "Testimonials", id: "/testimonials" }, { name: "FAQs", id: "/faqs" }, { name: "Contact", id: "/contact" }]} />
-        <div className="pt-32">
-          <ContactSplit 
-            tag="Get In Touch"
-            title="Schedule a Private Consultation"
-            description="Ready to elevate your real estate journey? Our team is standing by to help."
-            background={{ variant: "radial-gradient" }}
-          />
+        <div id="nav" data-section="nav">
+          <NavbarStyleCentered navItems={[{ name: "Home", id: "/" }, { name: "About", id: "/about" }, { name: "Contact", id: "/contact" }]} />
         </div>
-        <FooterBaseReveal columns={[]} logoText="The Guerini Group" />
+        <div id="contact" data-section="contact">
+          <ContactSplit tag="Get In Touch" title="Schedule a Private Consultation" description="Ready to elevate your real estate journey?" background={{ variant: "radial-gradient" }} useInvertedBackground={false} />
+        </div>
+        <div id="footer" data-section="footer">
+          <FooterBaseReveal logoText="The Guerini Group" columns={[{ title: "Company", items: [{ label: "Home", href: "/" }] }]} />
+        </div>
       </ReactLenis>
     </ThemeProvider>
   );
