@@ -1,5 +1,4 @@
 "use client";
-
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
@@ -8,18 +7,17 @@ import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 
 export default function TestimonialsPage() {
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultButtonVariant="text-stagger" defaultTextAnimation="entrance-slide" borderRadius="rounded" contentWidth="medium" sizing="medium" background="circleGradient" cardStyle="glass-elevated" primaryButtonStyle="gradient" secondaryButtonStyle="glass" headingFontWeight="normal">
       <ReactLenis root>
-        <NavbarStyleCentered navItems={[{ name: "Home", id: "/" }, { name: "About", id: "/#about" }, { name: "Services", id: "/#services" }, { name: "Listings", id: "/#listings" }, { name: "Testimonials", id: "/testimonials" }, { name: "FAQs", id: "/faqs" }, { name: "Contact", id: "/contact" }]} />
-        <div className="pt-32">
-           <TestimonialCardTwelve 
-             cardTitle="Client Success Stories"
-             cardTag="Top 10 Google Reviews"
-             cardAnimation="slide-up"
-             testimonials={[{id: "1", name: "Sarah J.", imageSrc: "http://img.b2bpic.net/free-photo/black-man-general-manager-connects-with-his-team-via-video-call_482257-123824.jpg"}, {id: "2", name: "Michael T.", imageSrc: "http://img.b2bpic.net/free-photo/lucky-man_1368-6349.jpg"}]}
-           />
+        <div id="nav" data-section="nav">
+          <NavbarStyleCentered navItems={[{ name: "Home", id: "/" }, { name: "Testimonials", id: "/testimonials" }]} />
         </div>
-        <FooterBaseReveal columns={[]} logoText="The Guerini Group" />
+        <div id="testimonials" data-section="testimonials">
+          <TestimonialCardTwelve cardTitle="Client Stories" cardTag="Reviews" cardAnimation="slide-up" useInvertedBackground={false} testimonials={[{ id: "1", name: "John D.", imageSrc: "/img/user1.jpg" }]} />
+        </div>
+        <div id="footer" data-section="footer">
+          <FooterBaseReveal logoText="The Guerini Group" columns={[{ title: "Company", items: [{ label: "Home", href: "/" }] }]} />
+        </div>
       </ReactLenis>
     </ThemeProvider>
   );
