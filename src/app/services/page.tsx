@@ -1,5 +1,4 @@
 "use client";
-
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
@@ -7,14 +6,15 @@ import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 
 export default function ServicesPage() {
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultButtonVariant="text-stagger" defaultTextAnimation="entrance-slide" borderRadius="rounded" contentWidth="medium" sizing="medium" background="circleGradient" cardStyle="glass-elevated" primaryButtonStyle="gradient" secondaryButtonStyle="glass" headingFontWeight="normal">
       <ReactLenis root>
-        <NavbarStyleCentered navItems={[{name: "Home", id: "/"}, {name: "Services", id: "/services"}, {name: "Listings", id: "/listings"}, {name: "Resources", id: "/resources"}, {name: "Contact", id: "#contact"}]} />
-        <div className="min-h-screen pt-32 p-8">
-            <h1 className="text-4xl font-bold mb-8">Our Services</h1>
-            <p>Our bespoke real estate services cater to discerning clients seeking luxury property solutions.</p>
+        <div id="nav" data-section="nav">
+          <NavbarStyleCentered navItems={[{ name: "Home", id: "/" }, { name: "Services", id: "/services" }]} />
         </div>
-        <FooterBaseReveal columns={[{title: "Company", items: [{label: "Home", href: "/"}, {label: "Services", href: "/services"}, {label: "Listings", href: "/listings"}]}]} logoText="The Guerini Group" />
+        <div className="min-h-screen pt-32 p-8"><h1>Services</h1></div>
+        <div id="footer" data-section="footer">
+          <FooterBaseReveal logoText="The Guerini Group" columns={[{ title: "Company", items: [{ label: "Home", href: "/" }] }]} />
+        </div>
       </ReactLenis>
     </ThemeProvider>
   );
