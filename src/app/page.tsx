@@ -167,7 +167,7 @@ export default function LandingPage() {
       columns={[
         { title: "Company", items: [{ label: "Home", href: "#hero" }, { label: "About Us", href: "#about" }, { label: "Services", href: "#services" }, { label: "Listings", href: "#listings" }] },
         { title: "Resources", items: [{ label: "Testimonials", href: "#testimonials" }, { label: "Contact", href: "#contact" }, { label: "FAQs", href: "#" }] },
-        { title: "Legal", items: [{ label: "Privacy Policy", href: "/privacy-policy" }, { label: "Terms of Service", href: "/terms-of-service" }] },
+        { title: "Legal", items: [{ label: "Privacy Policy", href: "#" }, { label: "Terms of Service", href: "#" }] },
       ]}
       copyrightText="© 2024 The Guerini Group. All rights reserved."
       onPrivacyClick={() => console.log("Privacy policy clicked")}
