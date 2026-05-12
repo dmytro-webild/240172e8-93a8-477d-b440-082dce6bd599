@@ -13,7 +13,7 @@ export default function TestimonialsPage() {
           <NavbarStyleCentered navItems={[{ name: "Home", id: "/" }, { name: "Testimonials", id: "/testimonials" }]} />
         </div>
         <div id="testimonials" data-section="testimonials">
-          <TestimonialCardTwelve cardTitle="Client Stories" cardTag="Reviews" cardAnimation="slide-up" testimonials={[{ id: "1", name: "John D.", imageSrc: "/img/user1.jpg" }]} />
+          <TestimonialCardTwelve cardTitle="Client Stories" cardTag="Reviews" cardAnimation="slide-up" testimonials={[{ id: "1", name: "John D.", imageSrc: "/img/user1.jpg" }]} useInvertedBackground={false} />
         </div>
         <div id="footer" data-section="footer">
           <FooterBaseReveal logoText="The Guerini Group" columns={[{ title: "Company", items: [{ label: "Home", href: "/" }] }]} />

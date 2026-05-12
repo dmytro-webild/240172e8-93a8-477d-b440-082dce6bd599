@@ -13,7 +13,7 @@ export default function FaqsPage() {
           <NavbarStyleCentered navItems={[{ name: "Home", id: "/" }, { name: "FAQs", id: "/faqs" }, { name: "Contact", id: "/contact" }]} />
         </div>
         <div id="faqs" data-section="faqs">
-          <FaqBase title="Frequently Asked Questions" description="Answers to common questions." faqsAnimation="slide-up" textboxLayout="default" faqs={[{ id: "1", title: "How do I start?", content: "Contact us today." }]} />
+          <FaqBase title="Frequently Asked Questions" description="Answers to common questions." faqsAnimation="slide-up" textboxLayout="default" faqs={[{ id: "1", title: "How do I start?", content: "Contact us today." }]} useInvertedBackground={false} />
         </div>
         <div id="footer" data-section="footer">
           <FooterBaseReveal logoText="The Guerini Group" columns={[{ title: "Support", items: [{ label: "FAQs", href: "/faqs" }] }]} />
