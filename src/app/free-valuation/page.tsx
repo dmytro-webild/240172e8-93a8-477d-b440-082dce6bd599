@@ -12,14 +12,14 @@ export default function FreeValuationPage() {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultButtonVariant="hover-magnetic" defaultTextAnimation="entrance-slide" borderRadius="rounded" contentWidth="medium" sizing="medium" background="circleGradient" cardStyle="glass-elevated" primaryButtonStyle="gradient" secondaryButtonStyle="glass" headingFontWeight="normal">
       <div id="nav" data-section="nav">
         <NavbarStyleCentered
           navItems={[
-            { name: "Home", id: "/#hero" },
+            { name: "Home", id: "/" },
             { name: "Free Valuation", id: "/free-valuation" }
           ]}
-          button={{ text: "Contact", href: "/#contact" }}
+          button={{ text: "Contact", href: "/contact" }}
           brandName="The Guerini Group"
         />
       </div>
@@ -27,7 +27,7 @@ export default function FreeValuationPage() {
       <main className="py-20 px-4 md:px-10 max-w-4xl mx-auto min-h-screen">
         {!submitted ? (
           <div className="space-y-8">
-            <TextAnimation title="Free Property Valuation" variant="words-trigger" className="text-4xl font-bold" />
+            <TextAnimation title="Free Property Valuation" type="reveal-blur" variant="words-trigger" className="text-4xl font-bold" />
             <p className="text-lg">Fill out the form below to receive a professional property assessment from our luxury experts.</p>
             
             {step === 1 && (
@@ -67,13 +67,6 @@ export default function FreeValuationPage() {
         )}
         <p className="text-sm text-gray-500 mt-20 text-center italic">Your privacy is our priority. Your information will never be shared.</p>
       </main>
-
-      <div id="about-us" className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Why Choose Us</h2>
-            <p className="text-lg px-4">At The Guerini Group, we leverage decades of high-end real estate experience to ensure your property is valued accurately and marketed to the right audience.</p>
-        </div>
-      </div>
     </ThemeProvider>
   );
 }
