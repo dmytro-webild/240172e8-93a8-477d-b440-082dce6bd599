@@ -35,10 +35,9 @@ export default function ValuationPage() {
         <div className="container mx-auto py-20">
             <TextAnimation 
               type="entrance-slide" 
+              text="Free Property Valuation"
               className="text-4xl"
-            >
-              Free Property Valuation
-            </TextAnimation>
+            />
         </div>
       </ReactLenis>
     </ThemeProvider>
