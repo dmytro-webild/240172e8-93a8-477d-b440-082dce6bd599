@@ -73,7 +73,7 @@ export default function PropertyValuationPage() {
         </div>
 
         <div id="footer">
-          <FooterBaseReveal columns={[]} logoText="The Guerini Group" />
+          <FooterBaseReveal columns={[]} />
         </div>
       </ReactLenis>
     </ThemeProvider>
