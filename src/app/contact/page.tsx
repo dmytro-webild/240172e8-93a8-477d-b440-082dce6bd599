@@ -13,7 +13,7 @@ export default function ContactPage() {
           <NavbarStyleCentered navItems={[{ name: "Home", id: "/" }, { name: "About", id: "/about" }, { name: "Contact", id: "/contact" }]} />
         </div>
         <div id="contact" data-section="contact">
-          <ContactSplit tag="Get In Touch" title="Schedule a Private Consultation" description="Ready to elevate your real estate journey?" background={{ variant: "radial-gradient" }} useInvertedBackground={false} />
+          <ContactSplit tag="Get In Touch" title="Schedule a Private Consultation" description="Ready to elevate your real estate journey?" background={{ variant: "radial-gradient" }} />
         </div>
         <div id="footer" data-section="footer">
           <FooterBaseReveal logoText="The Guerini Group" columns={[{ title: "Company", items: [{ label: "Home", href: "/" }] }]} />
