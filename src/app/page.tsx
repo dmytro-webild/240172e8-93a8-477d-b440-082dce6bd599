@@ -2,9 +2,9 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactText from '@/components/sections/contact/ContactText';
+import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FeatureCardTwentyThree from '@/components/sections/feature/FeatureCardTwentyThree';
-import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import FooterBase from '@/components/sections/footer/FooterBase';
 import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
 import MetricCardEleven from '@/components/sections/metrics/MetricCardEleven';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
@@ -151,24 +151,31 @@ export default function LandingPage() {
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactText
-      useInvertedBackground={false}
-      background={{ variant: "radial-gradient" }}
-      text="Ready to elevate your real estate journey? Contact The Guerini Group today for a private consultation. We respond quickly."
-      buttons={[
-        { text: "Schedule Consultation", onClick: () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) },
-        { text: "View Listings", href: "#listings" },
-      ]}
-    />
+      <ContactSplitForm
+        title="Free Property Valuation"
+        description="Get an accurate market assessment of your home from our local experts."
+        inputs={[
+          { name: "name", type: "text", placeholder: "Full Name", required: true },
+          { name: "address", type: "text", placeholder: "Property Address", required: true },
+          { name: "email", type: "email", placeholder: "Email Address", required: true },
+          { name: "phone", type: "tel", placeholder: "Phone Number", required: true }
+        ]}
+        textarea={{ name: "message", placeholder: "Additional details or questions...", rows: 4 }}
+        buttonText="Request Valuation"
+        useInvertedBackground={false}
+        imageSrc="http://img.b2bpic.net/free-photo/luxury-house-exterior_1122-1804.jpg"
+        onSubmit={(data) => console.log("Form submitted:", data)}
+      />
   </div>
 
   <div id="footer" data-section="footer">
-      <FooterBaseReveal
+      <FooterBase
       columns={[
         { title: "Company", items: [{ label: "Home", href: "#hero" }, { label: "About Us", href: "#about" }, { label: "Services", href: "#services" }, { label: "Listings", href: "#listings" }] },
         { title: "Resources", items: [{ label: "Testimonials", href: "#testimonials" }, { label: "Contact", href: "#contact" }, { label: "FAQs", href: "#" }] },
         { title: "Legal", items: [{ label: "Privacy Policy", href: "#" }, { label: "Terms of Service", href: "#" }] },
       ]}
+      logoText="The Guerini Group"
       copyrightText="© 2024 The Guerini Group. All rights reserved."
       onPrivacyClick={() => console.log("Privacy policy clicked")}
     />
