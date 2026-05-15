@@ -35,7 +35,6 @@ export default function LandingPage() {
         { name: "Services", id: "services" },
         { name: "Listings", id: "listings" },
         { name: "Testimonials", id: "testimonials" },
-        { name: "Valuation", id: "/free-property-valuation" },
         { name: "Contact", id: "contact" },
       ]}
       button={{ text: "Schedule Consultation", onClick: () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) }}
@@ -68,7 +67,7 @@ export default function LandingPage() {
       tagAnimation="slide-up"
       buttons={[
         { text: "Browse Luxury Listings", href: "#listings" },
-        { text: "Get a Free Property Valuation", href: "/free-property-valuation" },
+        { text: "Get a Free Property Valuation", onClick: () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) },
       ]}
       buttonAnimation="slide-up"
     />
